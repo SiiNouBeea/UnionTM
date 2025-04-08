@@ -59,7 +59,7 @@ do
   --fix_seed 2025 \
   --use_norm 1 \
   --l1_weight 0.0005 \
-  --mix_weight 0.46439425 0.29939022 0.23621554 >logs/LongForecasting/$model_id_name'_'$seq_len'_'$pred_len.log
+  --mix_weight 0.46439425 0.29939022 0.23621554 0.0 >logs/LongForecasting/$model_id_name'_'$seq_len'_'$pred_len.log
 done
 
 for pred_len in 336 720
@@ -107,5 +107,5 @@ do
   --fix_seed 2025 \
   --use_norm 1 \
   --l1_weight 0.0005 \
-  --mix_weight 0.46439425 0.29939022 0.23621554 >logs/LongForecasting/$model_id_name'_'$seq_len'_'$pred_len.log
+  --mix_weight 0.46439425 0.29939022 0.23621554 0.0 >logs/LongForecasting/$model_id_name'_'$seq_len'_'$pred_len.log
 done
