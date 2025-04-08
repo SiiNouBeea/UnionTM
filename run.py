@@ -46,7 +46,7 @@ def parse_args():
                         help='the weight of models')  # 各模型的权重
     parser.add_argument('--sample_rate', type=float, default=0.5, help='sample rate')
     parser.add_argument('--dynamic_delta', type=float, default=None, help='dynamic delta')
-    parser.add_argument('--plot', type=bool, default=False, help='whether to plot')
+    parser.add_argument('--plot', type=bool, default=True, help='whether to plot')
     parser.add_argument('--super_ensemble', type=bool, default=True, help='Use the latest update feature: Ultimate Learner')
 
     # Data Loader
@@ -770,20 +770,17 @@ def main():
         os.makedirs(plot_dir, exist_ok=True)
 
         # 绘制前100个时间点的对比图（可根据需要调整）
-        plt.figure(figsize=(12, 6))
-        plt.plot(trues[:1600, 0][:, -1], label='True Values')  # 取第一个特征绘制
-        plt.plot(preds_AVG[:1600, 0][:, -1], label='Predicted Values')  # 取第一个特征绘制
+        plt.plot(trues[:600, 0][:, -1], label='True Values')  # 取第一个特征绘制  -1
+        plt.plot(preds_AVG[:600, 0][:, -1], label='Predicted Values')  # 取第一个特征绘制
         plt.title(f"{args.model_id} Forecast Comparison (seq={args.seq_len} pred={args.pred_len})")
         plt.xlabel("Time Steps")
         plt.ylabel("Value")
         plt.legend()
-
         # 保存图像
         filename = f"{args.model_id}_{args.seq_len}_{args.pred_len}.png"
         plt.savefig(os.path.join(plot_dir, filename), dpi=300, bbox_inches='tight')
         plt.close()
         print(f"Plot saved to {os.path.join(plot_dir, filename)}")
-
 
 
 
