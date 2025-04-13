@@ -1,8 +1,11 @@
 import numpy as np
 # \UnionTM\tools\weightThresholdScreening.py
 # WTS-Mechanism
-def weightThresholdScreening(weight):
+def weightThresholdScreening(weights):
     print('\n\n>>>>>>>Select Model Based on Weights Distribution<<<<<<<<<<<<<<<<<<<')
+    weight=[0,0,0,0]
+    for i in range(len(weights)):
+        weight[i] = weights[i]
     weight = weight / np.sum(weight)
     run_flag = [1, 1, 1, 1]
     dia_models = {0: 'SimpleTM', 1: 'PatchTST', 2: 'TimeMixer', 3: 'PathFormer'}
