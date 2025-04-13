@@ -13,7 +13,7 @@ All datasets have been preprocessed and are ready for use. You can obtain them f
 For convenience, we provide a comprehensive package containing all required datasets, available for download from [Google Drive](https://drive.google.com/drive/folders/16kSkRg7lXtuqTfdhlQf5VaBNOFeqid2s?usp=sharing). You can place it under the folder [./dataset](./dataset/).
 
 ## 2. Requirements
-To install all dependencies[^2]:
+To install all dependencies:
 ```bash
 pip install -r requirements.txt
 ```
