@@ -61,7 +61,7 @@ do
   --train_epochs 20 \
   --random_seed 2021 \
   --dynamic_delta $dynamic_delta \
-  --mix_weight 0.72512417 0.27487583 0.0 >logs/LongForecasting/$model_id_name'_'$seq_len'_'$pred_len.log
+  --mix_weight 0.72512417 0.27487583 0.0 0 >logs/LongForecasting/$model_id_name'_'$seq_len'_'$pred_len.log
 done
 
 for pred_len in 336 720
@@ -110,5 +110,5 @@ do
   --train_epochs 25 \
   --random_seed 2021 \
   --dynamic_delta $dynamic_delta \
-  --mix_weight 0.72512417 0.27487583 0.0 >logs/LongForecasting/$model_id_name'_'$seq_len'_'$pred_len.log
+  --mix_weight 0.72512417 0.27487583 0.0 0 >logs/LongForecasting/$model_id_name'_'$seq_len'_'$pred_len.log
 done
