@@ -17,11 +17,8 @@ To install all dependencies[^2]:
 ```bash
 pip install -r requirements.txt
 ```
-If you are using Anaconda, you can create a new Conda environment and run the following command.
-```bash
-conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia
-```
-[^2]: Note: If you wish to run UnionTM on a GPU, please first run the following cmd command to install Pytorch in conjunction with CUDA.
+
+Note: If you wish to run UnionTM on a GPU, please first run the following cmd command to install Pytorch in conjunction with CUDA.
 ```bash
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
 ```
