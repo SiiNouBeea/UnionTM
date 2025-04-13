@@ -13,12 +13,22 @@ All datasets have been preprocessed and are ready for use. You can obtain them f
 For convenience, we provide a comprehensive package containing all required datasets, available for download from [Google Drive](https://drive.google.com/drive/folders/16kSkRg7lXtuqTfdhlQf5VaBNOFeqid2s?usp=sharing). You can place it under the folder [./dataset](./dataset/).
 
 ## 2. Requirements
-To install all dependencies:
+To install all dependencies[^2]:
 ```bash
 pip install -r requirements.txt
 ```
-
-
+If you are using Anaconda, you can create a new Conda environment and run the following command.
+```bash
+conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia
+```
+[^2]: Note: If you wish to run UnionTM on a GPU, please first run the following cmd command to install Pytorch in conjunction with CUDA.
+```bash
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+```
+If you are using Anaconda, you can create a new Conda environment and run the following command.
+```bash
+conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia
+```
 
 
 ## 3. Train the Model
