@@ -58,7 +58,7 @@ do
   --pct_start 0.4 \
   --train_epochs 40 \
   --random_seed 2021 \
-  --mix_weight 0.40788963 0.49655923 0.09555114  >logs/LongForecasting/$model_id_name'_'$seq_len'_'$pred_len.log
+  --mix_weight 0.40788963 0.49655923 0.09555114 0 >logs/LongForecasting/$model_id_name'_'$seq_len'_'$pred_len.log
 done
 
 for pred_len in 336 720
@@ -105,5 +105,5 @@ do
   --pct_start 0.4 \
   --train_epochs 80 \
   --random_seed 2021 \
-  --mix_weight 0.40788963 0.49655923 0.09555114  >logs/LongForecasting/$model_id_name'_'$seq_len'_'$pred_len.log
+  --mix_weight 0.40788963 0.49655923 0.09555114 0 >logs/LongForecasting/$model_id_name'_'$seq_len'_'$pred_len.log
 done
