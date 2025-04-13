@@ -43,7 +43,7 @@ do
       --alpha 0.3 \
       --l1_weight 0.0005 \
       --lradj 'TST' \
-      --patience 4 \
+      --patience 2 \
       --task_name long_term_forecast \
       --down_sampling_layers 3 \
       --down_sampling_method avg \
@@ -56,9 +56,9 @@ do
       --fc_dropout 0.2 \
       --head_dropout 0 \
       --pct_start 0.2 \
-      --train_epochs 30 \
+      --train_epochs 12 \
       --random_seed 2021 \
-      --mix_weight 1 0 0 >logs/LongForecasting/$model_id_name'_'$seq_len_len'_'$pred_len.log
+      --mix_weight 1 0 0 0>logs/LongForecasting/$model_id_name'_'$seq_len_len'_'$pred_len.log
 done
 
 for pred_len in 336 720
@@ -90,7 +90,7 @@ do
       --alpha 0.3 \
       --l1_weight 0.0005 \
       --lradj 'TST' \
-      --patience 6 \
+      --patience 2 \
       --task_name long_term_forecast \
       --down_sampling_layers 3 \
       --down_sampling_method avg \
@@ -103,7 +103,7 @@ do
       --fc_dropout 0.2 \
       --head_dropout 0 \
       --pct_start 0.2 \
-      --train_epochs 30 \
+      --train_epochs 12 \
       --random_seed 2021 \
-      --mix_weight 1 0 0 >logs/LongForecasting/$model_id_name'_'$seq_len_len'_'$pred_len.log
+      --mix_weight 1 0 0 0>logs/LongForecasting/$model_id_name'_'$seq_len_len'_'$pred_len.log
 done
