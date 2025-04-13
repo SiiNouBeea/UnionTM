@@ -199,6 +199,7 @@ def main():
 
     #WTS-Mechanism
     run_flag, single_model, single_model_name, weight = weightThresholdScreening(args.mix_weight)
+    args.mix_weight = weight
 
     #Start train
     if run_flag[0] == 1:
