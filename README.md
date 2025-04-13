@@ -18,7 +18,7 @@ To install all dependencies[^2]:
 pip install -r requirements.txt
 ```
 
-Note: If you wish to run UnionTM on a GPU, please first run the following cmd command to install Pytorch in conjunction with CUDA.
+Note: If you wish to run UnionTM on a GPU, please first run the following cmd command to install Pytorch in conjunction with CUDA.Replace 'cu118' in the command with your actual CUDA version.
 ```bash
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
 ```
