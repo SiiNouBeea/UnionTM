@@ -35,7 +35,7 @@ do
       --e_layers 3 \
       --d_model 32 \
       --d_ff 64 \
-      --learning_rate 0.006 \
+      --learning_rate 0.1 \
       --batch_size 256 \
       --fix_seed 2025 \
       --use_norm 1 \
@@ -49,7 +49,7 @@ do
       --alpha 0.3 \
       --l1_weight 0.0005 \
       --lradj 'TST' \
-      --patience 6 \
+      --patience 2 \
       --task_name long_term_forecast \
       --down_sampling_layers 3 \
       --down_sampling_method avg \
@@ -62,7 +62,7 @@ do
       --fc_dropout 0.2 \
       --head_dropout 0 \
       --pct_start 0.2 \
-      --train_epochs 40 \
+      --train_epochs 15 \
       --random_seed 2021 \
       --mix_weight 0.5 0.5 0 \
       --plot 'true' \
