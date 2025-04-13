@@ -64,7 +64,7 @@ do
       --pct_start 0.2 \
       --train_epochs 15 \
       --random_seed 2021 \
-      --mix_weight 0.5 0.5 0 \
+      --mix_weight 0.5 0.5 0 0\
       --plot 'true' \
       --find_weight 'true' >logs/LongForecasting/$model_id_name'_'$seq_len'_'$pred_len.log
 done
