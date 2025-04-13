@@ -186,7 +186,8 @@ def main():
         args.pre_train = False
 
     # GPU settings
-    #args.use_gpu = True if torch.cuda.is_available() and args.use_gpu else False
+    if not torch.cuda.is_available():
+        args.use_gpu = False
     if args.use_gpu and args.use_multi_gpu:
         args.devices = args.devices.replace(' ', '')
         device_ids = args.devices.split(',')
