@@ -62,7 +62,7 @@ do
   --train_epochs 12 \
   --random_seed 2021 \
   --d_layers 1 \
-  --mix_weight 0.47379644 0.25559652 0.27060703 \
+  --mix_weight 0.47379644 0.25559652 0.27060703 0\
   --factor 3 >logs/LongForecasting/$model_id_name'_'$seq_len'_'$pred_len.log
 done
 
@@ -112,7 +112,7 @@ do
   --train_epochs 12 \
   --random_seed 2021 \
   --d_layers 1 \
-  --mix_weight 0.47379644 0.25559652 0.27060703 \
+  --mix_weight 0.47379644 0.25559652 0.27060703 0\
   --factor 3 >logs/LongForecasting/$model_id_name'_'$seq_len'_'$pred_len.log
 done
 
